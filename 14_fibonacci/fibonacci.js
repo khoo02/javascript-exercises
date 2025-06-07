@@ -3,6 +3,9 @@ const fibonacci = function(num) {
     num = Number(num);
     
     // check if zero
+    if (num < 0) {
+        return "OOPS";
+    }
     if (num === 0) {
         return 0;
     }
